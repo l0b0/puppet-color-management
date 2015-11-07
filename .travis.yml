@@ -1,7 +1,7 @@
 ---
 language: ruby
 before_script:
-  - sudo make PUPPET="$(ruby -e 'print Gem.user_dir')/bin/puppet" install
+  - ruby_bin_dir=$(ruby -e 'print Gem.user_dir')/bin && export PATH="${PATH+${PATH}:}${ruby_bin_dir}" && sudo make PUPPET="${ruby_bin_dir}/puppet" install
 env:
   - PUPPET_GEM_VERSION="~> 3.7.0"
   - PUPPET_GEM_VERSION="~> 3.8.0"
