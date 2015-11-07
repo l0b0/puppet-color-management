@@ -1,0 +1,14 @@
+{
+  "name": "l0b0-color_management",
+  "version": "0.1.0",
+  "author": "Victor Engmark",
+  "summary": "It installs color profiles for known hardware combinations",
+  "license": "GNU General Public License, version 3 or any later version (GPL-3.0+)",
+  "source": "https://github.com/l0b0/puppet-color-management",
+  "project_page": "https://github.com/l0b0/puppet-color-management",
+  "issues_url": "https://github.com/l0b0/puppet-color-management/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
