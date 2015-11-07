@@ -1,7 +1,7 @@
 ---
 language: ruby
 before_script:
-  - rvm sudo make install
+  - sudo --preserve-env make install
 env:
   - PUPPET_GEM_VERSION="~> 3.7.0"
   - PUPPET_GEM_VERSION="~> 3.8.0"
