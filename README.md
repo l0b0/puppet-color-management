@@ -1,5 +1,7 @@
 # color_management
 
+[![Build Status](https://travis-ci.org/l0b0/puppet-color-management.svg)](https://travis-ci.org/l0b0/puppet-color-management)
+
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -71,6 +73,10 @@ This is where you list OS compatibility, version compatibility, etc.
 
 Since your module is awesome, other users will want to play with it. Let them
 know what the ground rules for contributing are.
+
+### Testing
+
+    make test
 
 ## Release Notes/Contributors/Etc **Optional**
 
