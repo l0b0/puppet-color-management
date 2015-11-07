@@ -1,9 +1,14 @@
+PUPPET = /usr/bin/puppet
 RM = /usr/bin/rm
 
 .PHONY: test
 test:
 	bundle install --path vendor
 	bundle exec rake lint syntax spec
+
+.PHONY: install
+install:
+	$(PUPPET) apply --verbose --debug --detailed-exitcodes manifests/init.pp || [ $$? -eq 2 ]
 
 .PHONY: clean
 clean: clean-test
